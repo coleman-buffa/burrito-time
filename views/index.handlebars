@@ -5,7 +5,7 @@
 <ul>
   {{#each burritos}}
     {{#unless devoured}}
-      {{> burritos/burrito-block devoured=true}}
+      {{> burritos/burrito-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each burritos}}
     {{#if devoured}}
-      {{> burritos/burrito-block devoured=false}}
+      {{> burritos/burrito-block devour=false}}
     {{/if}}
   {{/each}}
 </ul>

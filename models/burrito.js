@@ -15,8 +15,10 @@ const burrito = {
 		});
 	},
 	
-	updateOne: function() {
-		orm.updateOne();
+	updateOne: function(objColVals, condition, cb) {
+		orm.updateOne("burritos", objColVals, condition, function(res) {
+			cb(res);
+		});
 	}
 };
 
