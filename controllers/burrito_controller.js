@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
 	});
 });
 
-router.post('api/burritos', function(req, res) {
+router.post('/api/burritos', function(req, res) {
 	burrito.insertOne([
 		"burrito_name", "devoured"
 	], [

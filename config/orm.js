@@ -26,7 +26,7 @@ const orm = {
 	},
 
 	insertOne: function(table, cols, vals, cb) {
-		const queryStr = "INSERT INTO " + table;
+		let queryStr = "INSERT INTO " + table;
 
 		queryStr += " (";
 		queryStr += cols.toString();
