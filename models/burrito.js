@@ -9,8 +9,10 @@ const burrito = {
 		});
 	},
 
-	insertOne: function() {
-		orm.insertOne();
+	insertOne: function(cols, vals, cb) {
+		orm.insertOne(cols, vals, function(res){
+			cb(res);
+		});
 	},
 	
 	updateOne: function() {
