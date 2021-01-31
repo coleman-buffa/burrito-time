@@ -4,7 +4,9 @@ const orm = require('../config/orm.js');
 const burrito = {
 	
 	selectAll: function() {
-		orm.selectAll();
+		orm.selectAll('burritos', function(res) {
+			cb(res);
+		});
 	},
 
 	insertOne: function() {
