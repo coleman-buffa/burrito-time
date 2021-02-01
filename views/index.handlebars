@@ -1,38 +1,52 @@
-<h1>Burritos!</h1>
+<div class="callout large primary">
+	<div class="row column text-center">
+		<h1>Burritozilla</h1>
+	</div>
+</div>
 
-<h2>Burritos that are ready to eat!</h2>
+<div class="grid-x">
+	<div class="cell medium-6 callout large secondary">
+		<h3>Burritos that are ready to eat!</h2>
+			<ul class="menu">
+				{{#each burritos}}
+				{{#unless devoured}}
+				{{> burritos/burrito-block devour=true}}
+				{{/unless}}
+				{{/each}}
+			</ul>
+	</div>
 
-<ul>
-  {{#each burritos}}
-    {{#unless devoured}}
-      {{> burritos/burrito-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+	<div class="cell medium-6 callout large secondary">
+		<h3>Burritos that have been eaten!</h2>
+			<ul class="menu">
+				{{#each burritos}}
+				{{#if devoured}}
+				{{> burritos/burrito-block devour=false}}
+				{{/if}}
+				{{/each}}
+			</ul>
+	</div>
+</div>
 
-<h2>Burritos that have been eaten!</h2>
+<div class="grid-x text-center callout large primary">
+	<div class="cell medium-12">
+		<h3>Add a Burrito</h2>
+			<form class="create-form">
 
-<ul>
-  {{#each burritos}}
-    {{#if devoured}}
-      {{> burritos/burrito-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+				<div class="form-group grid-x align-center">
+					<label for="ca">Burrito Name</label>
+				</div>
+				<div class="form-group grid-x align-center">
+					<input type="text" id="ca" name="name">
+				</div>
 
-<h2>Add a Burrito</h2>
-<form class="create-form">
+				<div class="form-group">
+					<label for="devoured">Eat it now or later?</label><br>
+					<input type="radio" name="devoured" value="1" checked> Later!<br>
+					<input type="radio" name="devoured" value="0"> Now!
+				</div>
 
-  <div class="form-group">
-    <label for="ca">Burrito Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured">Eat it now or later?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Later!<br>
-    <input type="radio" name="devoured" value="0"> Now!
-  </div>
-
-  <button type="submit">Add Burrito</button>
-</form>
+				<button class="button primary" type="submit">Add Burrito</button>
+			</form>
+	</div>
+</div>
