@@ -7,7 +7,7 @@ Project description goes here...
 ## Table of Contents
 
 | |||
-|:-|:-|:-|:-
+|:-|:-|:-|
 | [Project Introduction](#burrito-time) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
 | [Installation and Use](#installation-and-use) | [Technologies](#technologies) | [Deployed Link](#deployed-link) |
 | [Authors](#authors) | [Acknowledgments](#acknowledgments) | [License](#license) |
