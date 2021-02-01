@@ -7,8 +7,8 @@ Project description goes here...
 ## Table of Contents
 
 ||||
-|:-|:-|:-|:-|:-
-| [Project Introduction](#employee-tracker) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
+|:-|:-|:-|:-
+| [Project Introduction](#burrito-time) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
 | [Installation and Use](#installation-and-use) | [Technologies](#technologies) | [Deployed Link](#deployed-link) |
 | [Authors](#authors) | [Acknowledgments](#acknowledgments) | [License](#license) |
 ---
@@ -34,7 +34,7 @@ Installation instructions here...
 
 ## Deployed Link
 
-[Deployed to Heroku]()
+[Deployed to Heroku](https://burritozilla.herokuapp.com/)
 
 ## Authors
 
